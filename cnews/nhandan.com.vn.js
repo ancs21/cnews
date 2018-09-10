@@ -1,63 +1,18 @@
-const { upDb } = require('../utils')
+const { upDb , readFileRss} = require('../utils')
+const path = require('path')
+const schedule = require('node-schedule')
 
 const config = {
   nameNews: 'Nhân dân',
-  urlNews: 'nhandan.com.vn'
+  urlNews: 'nhandan.com.vn',
+  file: path.join(__dirname + '/nhandan.com.vn.txt')
 }
 
-const urlrss = [
-  {
-    url: 'http://nhandan.com.vn/rss/chinhtri.html',
-    retry: 0
-  },
-  {
-    url: 'http://www.nhandan.com.vn/rss/kinhte.html',
-    retry: 0
-  },
-  {
-    url: 'http://www.nhandan.com.vn/rss/vanhoa.html',
-    retry: 0
-  },
-  {
-    url: 'http://www.nhandan.com.vn/rss/xahoi.html',
-    retry: 0
-  },
-  {
-    url: 'http://www.nhandan.com.vn/rss/phapluat.html',
-    retry: 0
-  },
-  {
-    url: 'http://www.nhandan.com.vn/rss/congnghe.html',
-    retry: 0
-  },
-  {
-    url: 'http://www.nhandan.com.vn/rss/khoahoc.html',
-    retry: 0
-  },
-  {
-    url: 'http://www.nhandan.com.vn/rss/giaoduc.html',
-    retry: 0
-  },
-  {
-    url: 'http://www.nhandan.com.vn/rss/suckhoe.html',
-    retry: 0
-  },
-  {
-    url: 'http://www.nhandan.com.vn/rss/thegioi.html',
-    retry: 0
-  },
-  {
-    url: 'http://www.nhandan.com.vn/rss/thethao.html',
-    retry: 0
-  },
-  {
-    url: 'http://www.nhandan.com.vn/rss/bandoc.html',
-    retry: 0
-  }
-]
-
-const nd = async () => {
-  return await upDb(config, urlrss)
+module.exports = async () => {
+  schedule.scheduleJob('*/10 * * * *', async () => {
+    console.log(`--> Job starting ${new Date()}`)
+    const urlrss = await readFileRss(config.file)
+    await upDb(config, urlrss)
+    return
+  })
 }
-
-module.exports = nd

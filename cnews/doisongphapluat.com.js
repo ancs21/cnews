@@ -3,9 +3,9 @@ const path = require('path')
 const schedule = require('node-schedule')
 
 const config = {
-  nameNews: 'Vietnamnet',
-  urlNews: 'vietnamnet.vn',
-  file: path.join(__dirname + '/vietnamnet.vn.txt')
+  nameNews: 'Đời sống pháp luật',
+  urlNews: 'doisongphapluat.com',
+  file: path.join(__dirname + '/doisongphapluat.com.txt')
 }
 
 module.exports = async () => {
