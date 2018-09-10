@@ -1,0 +1,6 @@
+http://cafef.vn/rss/chung-khoan.rss
+http://cafef.vn/rss/bat-dong-san.rss
+http://cafef.vn/rss/doanh-nghiep.rss
+http://cafef.vn/rss/tai-chinh-quoc-te.rss
+http://cafef.vn/rss/ngan-hang.rss
+http://cafef.vn/rss/song.rss
