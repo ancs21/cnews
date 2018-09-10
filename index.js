@@ -6,8 +6,7 @@ const main = async () => {
   if (argUrl.length) {
     switch (argUrl[0]) {
       case 'nld':
-        const dataNld = await nld()
-        console.log(dataNld)
+        await nld()
         break
 
       case 'vnn':

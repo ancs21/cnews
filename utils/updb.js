@@ -36,8 +36,8 @@ const upDb = async (config, urlrss) => {
     })
     .then(() => {})
     .catch(error => console.log(error))
-
-  return '-> success'
+  console.log(`-> success rate ${dataNews.successRate}`)
+  return 
 }
 
 module.exports = upDb
