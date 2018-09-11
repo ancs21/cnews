@@ -1,0 +1,16 @@
+http://nhandan.com.vn/about_us.html
+http://nhandan.com.vn/cuoituan.html
+http://nhandan.com.vn/hangthang.html
+http://nhandan.com.vn/rss.html
+http://nhandan.com.vn/rss/chinhtri.html
+http://nhandan.com.vn/rss/kinhte.html
+http://nhandan.com.vn/rss/vanhoa.html
+http://nhandan.com.vn/rss/xahoi.html
+http://nhandan.com.vn/rss/phapluat.html
+http://nhandan.com.vn/rss/congnghe.html
+http://nhandan.com.vn/rss/khoahoc.html
+http://nhandan.com.vn/rss/giaoduc.html
+http://nhandan.com.vn/rss/suckhoe.html
+http://nhandan.com.vn/rss/thegioi.html
+http://nhandan.com.vn/rss/thethao.html
+http://nhandan.com.vn/rss/bandoc.html

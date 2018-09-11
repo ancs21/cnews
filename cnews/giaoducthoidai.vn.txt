@@ -5,7 +5,6 @@ https://giaoducthoidai.vn/rss/thoi-su-1.rss
 https://giaoducthoidai.vn/rss/giao-duc-6.rss
 https://giaoducthoidai.vn/rss/giao-duc-6.rss
 https://giaoducthoidai.vn/rss/giao-duc-phap-luat-4.rss
-https://giaoducthoidai.vn/rss/giao-duc-phap-luat-4.rss
 https://giaoducthoidai.vn/rss/ban-doc-5.rss
 https://giaoducthoidai.vn/rss/ban-doc-5.rss
 https://giaoducthoidai.vn/rss/ket-noi-11.rss

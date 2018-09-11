@@ -5,7 +5,6 @@ const getDataNews = require('./getdata')
 const upDb = async (config, urlrss) => {
   const initdb = await db()
   const dataNews = await getDataNews(config.nameNews, urlrss)
-
   for (let item of dataNews.data) {
     initdb
       .collection('datacnews')

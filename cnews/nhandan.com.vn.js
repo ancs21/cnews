@@ -9,7 +9,7 @@ const config = {
 }
 
 module.exports = async () => {
-  schedule.scheduleJob('*/10 * * * *', async () => {
+  schedule.scheduleJob('* * * * *', async () => {
     console.log(`--> Job starting ${new Date()}`)
     const urlrss = await readFileRss(config.file)
     await upDb(config, urlrss)

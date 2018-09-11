@@ -15,11 +15,13 @@ const getDataNews = async (nameNews, urlRSS) => {
       const options = {
         timeout: 5000
       }
-
       const xmlResponse = await got(link.url, options)
       if (xmlResponse.statusCode == 200) {
         const newdata = await parserXmlToJson(nameNews , xmlResponse.body)
-        data = [...data, ...newdata]
+        if (newdata) {
+          data = [...data, ...newdata]
+        }
+        
       }
     } catch (error) {
       if (link.retry >= 2) {

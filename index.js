@@ -1,6 +1,8 @@
 const { nld, vnn, nd, dspl } = require('./cnews')
 const { db } = require('./utils')
 
+const nd = require('./cnews/nhandan.com.vn');
+
 const main = async () => {
   const argUrl = process.argv.slice(2)
   if (argUrl.length) {
@@ -18,7 +20,7 @@ const main = async () => {
         break
         
       case 'dspl':
-        await nd()
+        await dspl()
         break
 
       default:

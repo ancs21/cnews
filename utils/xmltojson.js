@@ -12,7 +12,12 @@ const xml2jsonPromise = xmlInput => {
 const parserXmlToJson = async (nameNews, xml) => {
   const data = []
   const result = await xml2jsonPromise(xml)
-  const items = result.rss.channel[0].item
+  let items 
+  if ('item' in result.rss.channel[0]) {
+    items =  result.rss.channel[0].item
+  } else {
+    items = []
+  }
   for (let i = 0; i < items.length; i++) {
     data.push({
       nameNews,
